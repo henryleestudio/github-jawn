@@ -5,7 +5,7 @@ const simpleGit = require('simple-git')
 const FILE_PATH = './data.json'
 
 const makeCommit = (x,y) => {
-  const DATE = moment().subtract(5, 'd')
+  const DATE = moment().subtract(0, 'd')
                         .add(x,'w').add(y,'d').format()
   const data = {
     date: DATE
@@ -15,4 +15,4 @@ const makeCommit = (x,y) => {
   })
 }
 
-makeCommit(0,0)
+makeCommit(18,1)
